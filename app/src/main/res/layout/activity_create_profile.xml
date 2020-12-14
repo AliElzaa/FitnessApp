@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/white">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                >
+                <RelativeLayout
+                    android:id="@+id/relative_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+                    <ImageView
+                        android:layout_margin="10dp"
+                        android:id="@+id/img_cover"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+
+                        android:gravity="bottom"
+                        android:visibility="gone"
+                        android:adjustViewBounds="true"
+                        android:alpha="0.4"
+                        android:scaleType="centerCrop"
+                        android:orientation="vertical"
+                        android:contentDescription="@string/todo" />
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_marginTop="10dp"
+                        android:layout_centerInParent="true"
+                        android:id="@+id/img_profile"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+
+                        android:layout_marginBottom="0dp"
+                        android:src="@drawable/ic_stub" />
+
+
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Username"
+                        android:layout_marginBottom="4px"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="10dp">
+
+                    </TextView>
+
+                    <customfonts.EditText_Roboto_Regular
+                        android:id="@+id/ed_first"
+                        android:layout_below="@+id/tv_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/rounded_grey"
+                        android:hint="@string/username"
+                        android:maxLength="30"
+                        android:inputType="text"
+                        android:textColor="#080812"
+
+                        android:maxLines="1"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tv_age"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Age"
+                        android:layout_marginBottom="4px"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="10dp">
+
+                    </TextView>
+                    <customfonts.EditText_Roboto_Regular
+
+                        android:id="@+id/ed_email"
+                        android:layout_below="@+id/tv_age"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_marginBottom="20dp"
+
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/rounded_grey"
+                        android:hint="@string/age"
+                        android:maxLength="30"
+                        android:inputType="text"
+                        android:textColor="#080812"
+                        android:maxLines="1"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_currentweight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Current Weight"
+                        android:layout_marginBottom="4px"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="10dp">
+
+                    </TextView>
+                    <customfonts.EditText_Roboto_Regular
+
+                        android:id="@+id/ed_current_weight"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_below="@+id/tv_currentweight"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/rounded_grey"
+                        android:hint="@string/current_weight"
+                        android:enabled="true"
+                        android:maxLength="30"
+                        android:inputType="number"
+                        android:textColor="#080812"
+                        android:maxLines="1"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_target"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Target Weight"
+                        android:layout_marginBottom="4px"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="10dp">
+
+                    </TextView>
+
+
+                    <customfonts.EditText_Roboto_Regular
+
+                        android:id="@+id/ed_target"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_below="@+id/tv_target"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginBottom="20dp"
+
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/rounded_grey"
+                        android:hint="@string/target"
+                        android:enabled="true"
+                        android:maxLength="30"
+                        android:inputType="number"
+                        android:textColor="#080812"
+                        android:maxLines="1"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_height"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Height"
+                    android:layout_marginBottom="4px"
+                    android:layout_marginLeft="25dp"
+
+                    android:textSize="10dp">
+
+                </TextView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <customfonts.EditText_Roboto_Regular
+
+                        android:id="@+id/ed_height"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginBottom="20dp"
+
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/rounded_grey"
+                        android:hint="@string/height"
+                        android:enabled="true"
+                        android:maxLength="30"
+                        android:inputType="numberDecimal"
+                        android:textColor="#080812"
+                        android:maxLines="1"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/btn_create_profile"
+                    style="@style/AppTheme.RoundedCornerMaterialButton"
+                    android:text="@string/create"
+                    android:textAllCaps="false"
+                    />
+
+            </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

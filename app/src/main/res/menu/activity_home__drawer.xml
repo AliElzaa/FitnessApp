@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/nav_dashboard_item"
+        android:textAlignment="viewStart"
+        android:textDirection="locale"
+        android:title="Dashboard">
+
+        <menu>
+            <group
+                android:id="@+id/nav_dashboard"
+
+                android:checkableBehavior="none"
+                >
+
+
+                <!--<item-->
+
+                    <!--android:id="@+id/nav_profile"-->
+                    <!--android:icon="@drawable/ic_avatar"-->
+                    <!--android:title="My Profile"-->
+                    <!--android:fontFamily="@font/font_regular"-->
+
+                    <!--/>-->
+                <!--<item-->
+                    <!--android:id="@+id/nav_forum_profile"-->
+                    <!--android:icon="@drawable/ic_home"-->
+                    <!--android:fontFamily="@font/font_regular"-->
+                    <!--android:title="Go to forum Profile" />-->
+                <item
+                    android:id="@+id/nav_profile_setting"
+                    android:icon="@drawable/ic_avatar"
+                    android:title="Profile Setting" />
+                <item
+                    android:id="@+id/nav_home"
+                    android:icon="@drawable/ic_home"
+                    android:title="Home" />
+                <!--<item-->
+                    <!--android:id="@+id/nav_manage_articles"-->
+                    <!--android:icon="@drawable/ic_hourglass"-->
+                    <!--android:visible="false"-->
+                    <!--android:title="Manage Articles" />-->
+                <item
+                    android:id="@+id/nav_favourites"
+                    android:icon="@drawable/ic_heart"
+                    android:visible="false"
+                    android:title="Favourites" />
+                <item
+                    android:id="@+id/nav_booking_listing"
+                    android:icon="@drawable/ic_appointment"
+                    android:visible="true"
+                    android:title="Active Orders" />
+<!--                <item-->
+<!--                    android:id="@+id/nav_booking_schedules"-->
+<!--                    android:icon="@drawable/ic_clock"-->
+<!--                    android:title="Active Orders" />-->
+                <item
+                    android:id="@+id/nav_schedules"
+                    android:icon="@drawable/ic_clock"
+                    android:visible="true"
+                    android:title="History"/>
+                <item
+                    android:id="@+id/nav_delivered"
+                    android:icon="@drawable/ic_appointment"
+                    android:title="Delivered Orders" />
+
+
+                <!--<item-->
+                    <!--android:id="@+id/nav_booking_settings"-->
+                    <!--android:icon="@drawable/ic_services"-->
+                    <!--android:title="Booking Settings" />-->
+
+                <item
+                    android:id="@+id/nav_security_setting"
+                    android:icon="@drawable/ic_services"
+                    android:title="Security Settings" />
+                <!--<item-->
+                    <!--android:id="@+id/nav_privacy_setting"-->
+                    <!--android:icon="@drawable/ic_eye"-->
+                    <!--android:visible="false"-->
+                    <!--android:title="Privacy Settings" />-->
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/ic_exit"
+                    android:title="Logout" />
+
+            </group>
+
+        </menu>
+    </item>
+
+    <item android:title="General"
+        android:textAlignment="viewStart"
+        android:textDirection="locale">
+        <menu>
+
+            <group android:checkableBehavior="none">
+
+            <item
+                android:id="@+id/nav_register"
+                android:icon="@drawable/ic_lock"
+                android:title="Register"
+                android:visible="false"
+
+                />
+            <item
+                android:id="@+id/nav_login"
+                android:icon="@drawable/ic_enter"
+                android:title="Login"
+                android:visible="false"/>
+            <item
+                android:id="@+id/about_us"
+                android:visible="true"
+                android:icon="@drawable/ic_bullhorn"
+                android:title="About Us" />
+
+                <item
+                    android:visible="true"
+                    android:id="@+id/ui_rate_us"
+                    android:icon="@drawable/ic_thumbs_up"
+                    android:title="Rate this App" />
+
+                <item
+                    android:visible="true"
+                    android:id="@+id/nav_invite"
+                    android:icon="@drawable/ic_envelope"
+                    android:title="Invite Friends"
+                    />
+            <item
+                android:id="@+id/nav_Contact_support"
+                android:visible="false"
+                android:icon="@drawable/ic_briefcase"
+                android:title="Contact Support" />
+            </group>
+        </menu>
+    </item>
+
+</menu>

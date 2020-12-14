@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.FitAlly.MyFitAllyApp.UserDetailActivity">
+    <RelativeLayout
+        android:id="@+id/relativeMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/relativeFirst"
+            android:layout_alignParentLeft="true"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageUser"
+                android:layout_margin="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/imageUser"
+                android:id="@+id/tv_name"
+                android:layout_margin="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <RelativeLayout
+                android:layout_margin="20dp"
+                android:layout_below="@+id/tv_name"
+                android:background="@drawable/bg_oval_green_stoke"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text="Current : "
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/black"
+                    android:id="@+id/tv_current"
+                    android:layout_margin="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <RelativeLayout
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/tv_current"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                    <TextView
+
+                        android:text="Current Weit"
+
+                        android:textColor="@color/black"
+                        android:id="@+id/tv_target"
+                        android:layout_margin="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout></RelativeLayout>
+        <TextView
+            android:layout_toRightOf="@+id/relativeFirst"
+            android:layout_toLeftOf="@+id/relativeSecond"
+            android:text="VS"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:id="@+id/tv_vs"
+            android:layout_margin="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <RelativeLayout
+            android:id="@+id/relativeSecond"
+            android:layout_alignParentRight="true"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageSecondUser"
+                android:layout_margin="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/imageSecondUser"
+                android:id="@+id/tv_Secondname"
+                android:layout_margin="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <RelativeLayout
+                android:layout_margin="20dp"
+                android:layout_below="@+id/tv_Secondname"
+                android:background="@drawable/bg_oval_green_stoke"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text="Current Weit"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/black"
+                    android:id="@+id/tv_Secondcurrent"
+                    android:layout_margin="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <RelativeLayout
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/tv_Secondcurrent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                    <TextView
+
+                        android:text="Current Weit"
+
+                        android:textColor="@color/black"
+                        android:id="@+id/tv_Secondtarget"
+                        android:layout_margin="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout></RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/linearSteps"
+        android:layout_below="@+id/relativeMain"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp" >
+
+        <TextView
+            android:layout_width="10dp"
+            android:background="#7F7F7F"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:id="@+id/textDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:paddingLeft="15dp"
+            android:text="@string/desc" />
+
+    </LinearLayout>
+
+    <LinearLayout
+      android:layout_below="@+id/linearSteps"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="7"
+        android:id="@+id/linear"
+
+        android:layout_margin="10dp"
+        android:baselineAligned="true" >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="true" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textSize="20sp"
+                android:text="@string/title1" />
+
+            <EditText
+                android:id="@+id/editHealthDateValue1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="right"
+                android:hint="Enter Steps"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#C0C0C0"
+                android:gravity="center_horizontal"
+                android:textSize="15sp"
+                android:text="@string/unit1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="10dp" >
+
+            <TextView
+                android:id="@+id/tv_progress"
+                android:textColor="@color/white"
+                android:text="@string/start_competition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#4A7EBB" />
+            <Button
+                android:visibility="visible"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:text="Calculate"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/btn_calculate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:visibility="gone"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btn_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@+id/linear"
+        android:id="@+id/newchart">
+
+    </com.github.mikephil.charting.charts.BarChart>
+</RelativeLayout>

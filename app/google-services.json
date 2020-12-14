@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "190541067629",
+    "firebase_url": "https://fitness-922a8.firebaseio.com",
+    "project_id": "fitness-922a8",
+    "storage_bucket": "fitness-922a8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:190541067629:android:5dc9d8835aef42b87e5664",
+        "android_client_info": {
+          "package_name": "com.FitAlly.fitnessapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "190541067629-mp7revvohefokiu3ol2b0inetni0sedn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7cNM0RIiy9bnsQh3j3AQOkCeb8pKpPsk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "190541067629-mp7revvohefokiu3ol2b0inetni0sedn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

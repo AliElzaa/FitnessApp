@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<!--    <item-->
+<!--        android:id="@+id/home"-->
+<!--        android:icon="@drawable/ic_home"-->
+<!--        android:title="Home"-->
+<!--        app:cnb_iconColor="@color/colorPrimary"/>-->
+<!--    <item-->
+<!--        android:id="@+id/activity"-->
+<!--        android:icon="@drawable/ic_heart"-->
+<!--        android:title="Activity"-->
+<!--        app:cnb_iconColor="@color/red_btn_bg_color"/>-->
+<!--    <item-->
+<!--        android:id="@+id/favorites"-->
+<!--        android:icon="@drawable/ic_heart"-->
+<!--        android:title="Favorites"-->
+<!--        app:cnb_iconColor="@color/green_light" />-->
+<!--    <item-->
+<!--        android:id="@+id/settings"-->
+<!--        android:icon="@drawable/ic_heart"-->
+<!--        android:title="Settings"-->
+<!--        app:cnb_iconColor="@color/send_comment_button_activated" />-->
+</menu>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:custom="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp">
+            <customfonts.MyTextView_Roboto_Regular
+                android:id="@+id/welcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/welcome"
+                android:textColor="#080e12"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"/>
+<RelativeLayout
+    android:layout_below="@+id/welcome"
+    android:id="@+id/img_relative"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/img_profile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_stub"
+
+        ></de.hdodenhof.circleimageview.CircleImageView>
+    <ImageView
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/img_profile"
+        android:id="@+id/img_camera"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_photo_camera_white_24dp"
+
+        ></ImageView>
+</RelativeLayout>
+
+
+
+            <customfonts.MyTextView_Roboto_Regular
+                android:layout_below="@+id/img_relative"
+                android:id="@+id/set_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="12sp"
+                android:text="@string/welcome_message"
+                android:textColor="#808385" />
+            <ImageView
+            android:visibility="gone"
+                android:id="@+id/email_icon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/email_24px"
+                android:contentDescription="@string/todo" />
+            <com.google.android.material.textfield.TextInputLayout
+               android:layout_below="@+id/set_pass"
+                android:id="@+id/mobile_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+               android:visibility="visible"
+                android:layout_toEndOf="@+id/email_icon"
+                app:passwordToggleEnabled="false"
+                app:hintEnabled="false"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/email_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey_light"
+                    android:textSize="13sp"
+
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_below="@+id/mobile_no"
+                android:id="@+id/user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:visibility="visible"
+
+                app:passwordToggleEnabled="false"
+                app:hintEnabled="false"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/username_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="@string/username"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:textColorHint="@color/grey_light"
+
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/password_icon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_below="@+id/user_name"
+                android:src="@drawable/lock"
+                android:contentDescription="@string/todo" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/in_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_toEndOf="@+id/password_icon"
+                android:layout_below="@+id/user_name"
+                android:layout_marginTop="5dp"
+                android:textColorHint="@color/grey_light"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="#7a7a7a"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/password_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="@string/password"
+
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:maxLength="15"
+                    android:textSize="13sp"
+                    android:textColor="@color/black"
+
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/password_icon_2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_below="@+id/in_password"
+                android:src="@drawable/lock"
+                android:contentDescription="@string/todo" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/in_password_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_toEndOf="@+id/password_icon_2"
+                android:layout_below="@+id/in_password"
+                android:layout_marginTop="5dp"
+                android:textColorHint="@color/grey_light"
+                app:passwordToggleEnabled="true"
+
+                app:passwordToggleTint="#7a7a7a"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/repassword_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="@string/re_password"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:maxLength="15"
+                    android:textSize="13sp"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <CheckBox
+                android:id="@+id/cb_terms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/i_agree_with_terms_and_conditions"
+                android:visibility="visible"
+                android:textColor="@color/black"
+                android:layout_below="@+id/in_password_2"/>
+
+
+
+            <Button
+                android:layout_alignParentBottom="true"
+                android:enabled="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/AppTheme.RoundedCornerMaterialButton"
+                android:layout_marginBottom="20dp"
+                android:background="@color/grey_light"
+
+                android:layout_marginLeft="43dp"
+                android:layout_marginRight="43dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/continue_next"
+                android:textAllCaps="false"
+                android:id="@+id/signup"/>
+
+        </RelativeLayout>
+
+
+</RelativeLayout>

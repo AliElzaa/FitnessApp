@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#8333F1</color>
+    <color name="colorAccent">#8333F1
+    </color>
+    <color name="color_blue">#3F51B5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="light_gray">#D3D3D3</color>
+    <color name="black">#000000</color>
+    <color name="temperature_background">@color/blue</color>
+    <color name="temperature_text">@android:color/white</color>
+    <color name="blue">#348af7</color>
+    <color name="green_dot_big">@color/blue</color>
+    <color name="green_dot_small">@color/blue</color>
+    <color name="primary_dark_text">#28333D</color>
+    <color name="secondary_text">#434343</color>
+    <color name="secondary_light">#979797</color>
+    <color name="secondary_light_background">#EFF1F8</color>
+    <color name="colorAccent_light">#80000000</color>
+    <color name="blueDarkitem">#5ac1f4</color>
+    <color name="bg_screen1">#3498db</color>
+    <color name="bg_screen2">#e74c3c</color>
+    <color name="color_b7b7b7">#b7b7b7</color>
+    <color name="color_636161">#636161</color>
+    <color name="tw__transparent">#00000000</color>
+    <color name="demo_item">#d8d8d8</color>
+    <color name="color_010101">#010101</color>
+    <color name="color_6c6a6a">#6c6a6a</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_60">#96000000</color>
+    <color name="color_a4a3a3">#a4a3a3</color>
+    <color name="color_5d5d5d">#5d5d5d</color>
+    <color name="color_959595">#959595</color>
+    <color name="color_backgr">#FAFAFA</color>
+    <color name="color_textview_background">#FAFAFA</color>
+    <color name="color_fbfbfb">#fbfbfb</color>
+    <color name="color_bbbbbb">#bbbbbb</color>
+    <color name="color_dbdbde">#dbdbde</color>
+    <color name="home_background">#ededed</color>
+    <color name="bg_screen3">#9b59b6</color>
+    <color name="bg_screen4">#FA6B3C</color>
+    <color name="gen_black">#000000</color>
+    <color name="gen_white">#FFFFFF</color>
+    <color name="green_light">#43A047</color>
+    <color name="grey_light">#E0E0E0</color>
+    <color name="orange">#F3773B</color>
+    <color name="highlight_text">#17a1d7</color>
+    <color name="circle_image_shadow">#8b8b8b</color>
+    <color name="icons_counter_color">#828181</color>
+    <color name="text_background">#BF4447</color>
+    <color name="dot_dark_screen1">#2980b9</color>
+    <color name="dot_dark_screen2">#c0392b</color>
+    <color name="dot_dark_screen3">#8e44ad</color>
+    <color name="dot_dark_screen4">#27ae60</color>
+    <color name="gradient_end">#c9d2ff</color>
+    <color name="yellow">#F9ED10</color>
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#6a89cc</color>
+    <color name="dot_light_screen2">#e55039</color>
+    <color name="dot_light_screen3">#82ccdd</color>
+    <color name="dot_light_screen4">#38ada9</color>
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+    </array>
+</resources>

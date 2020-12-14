@@ -1,0 +1,28 @@
+<tabs
+    >
+    <tab
+        id="@+id/home"
+        icon="@drawable/ic_home"
+        title="Home"
+        activeColor="#F33040"
+        badgeBackgroundColor="#FF0000"
+        badgeHidesWhenActive="true"
+        inActiveColor="#000000"
+        />
+    <tab
+        id="@+id/profile"
+        icon="@drawable/ic_avatar"
+        title="Profile"
+        activeColor="#F33040"
+        inActiveColor="#000000"
+        />
+
+
+<!--    <tab-->
+<!--        id="@+id/settings"-->
+<!--        icon="@drawable/ic_setting_icons"-->
+<!--        title="Settings"-->
+<!--        activeColor="#ffffff"-->
+<!--        inActiveColor="#a3e1ff"-->
+<!--        />-->
+</tabs>
